@@ -1,0 +1,42 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+
+<form method="post" action="/register">
+    <div class="container col-md-6 py-5">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="register-form">
+                <div style="text-align: center;">
+                    <h3>ĐĂNG KÝ NGƯỜI DÙNG </h3>
+                </div>
+                <div class="control-form">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="name" placeholder="Họ tên" name="name">
+                        <label for="name">Họ tên</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="username" placeholder="Họ tên" name="username">
+                        <label for="username">Tên đăng nhập</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="password" class="form-control" id="password" placeholder="Mật khẩu"
+                               name="password">
+                        <label for="password">Mật khẩu</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="password" class="form-control" id="confirm" placeholder="Xác nhận mật khẩu"
+                               name="confirm">
+                        <label for="confirm">Xác nhận mật khẩu</label>
+                    </div>
+                    <div class="btn-register">
+                        <div class="mt-3">
+                            <button class="submit-btn" type="submit">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
